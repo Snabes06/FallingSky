@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "fallingsky",
+  "version": "${version}",
+  "name": "FallingSky",
+  "description": "Best skyblock mod to ever exist, with only the bestest of features, period.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fallingsky/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "sw.surasnipers.fallingsky.client.FallingskyDataGenerator"
+    ],
+    "client": [
+      "sw.surasnipers.fallingsky.client.FallingskyClient"
+    ],
+    "main": [
+      "sw.surasnipers.fallingsky.Fallingsky"
+    ]
+  },
+  "mixins": [
+    "fallingsky.mixins.json",
+    {
+      "config": "fallingsky.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
