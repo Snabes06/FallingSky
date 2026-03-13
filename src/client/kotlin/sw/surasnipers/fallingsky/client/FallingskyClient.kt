@@ -10,8 +10,16 @@ import org.lwjgl.glfw.GLFW
 
 class FallingskyClient : ClientModInitializer {
 
-    private var glowEnabled = false
-    private val glowDistance = 50.0
+    companion object {
+        @JvmStatic
+        var glowEnabled = false
+
+        @JvmStatic
+        fun isGlowEnabled(): Boolean {
+            return glowEnabled
+        }
+    }
+
     private lateinit var toggleKey: KeyBinding
 
     override fun onInitializeClient() {
@@ -37,12 +45,8 @@ class FallingskyClient : ClientModInitializer {
             val world = client.world ?: return@register
 
             for (entity: Entity in world.entities) {
-                val glow = entity.isGlowing
-                println("Entity: $glow")
                 if (entity == player) continue
-
                 entity.isGlowing = true
-
             }
         }
     }
