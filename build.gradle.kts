@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "2.3.10"
-    id("fabric-loom") version "1.16.0-alpha.11"
+    id("fabric-loom") version "1.14-SNAPSHOT"
     id("maven-publish")
 }
 
@@ -66,10 +66,10 @@ tasks.processResources {
 
     filesMatching("fabric.mod.json") {
         expand(
-            "version" to project.version,
-            "minecraft_version" to project.property("minecraft_version"),
-            "loader_version" to project.property("loader_version"),
-            "kotlin_loader_version" to project.property("kotlin_loader_version")
+            "version" to project.version.toString(),
+            "minecraft_version" to project.property("minecraft_version").toString(),
+            "loader_version" to project.property("loader_version").toString(),
+            "kotlin_loader_version" to project.property("kotlin_loader_version").toString()
         )
     }
 }

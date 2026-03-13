@@ -1,0 +1,2285 @@
+[
+    {
+        "id":  "at_your_service",
+        "tile":  "At your service",
+        "primary_method":  "Build common visitor crop plots; process 50 visitors",
+        "key_prerequisites":  "Garden unlock, crop infrastructure",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "garden_visitors",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Complete 50 Garden Visitors\u0027 Offers"
+    },
+    {
+        "id":  "bayou_bobbin",
+        "tile":  "Bayou Bobbin\u0027",
+        "primary_method":  "Fish Rusty Coins with Junk Sinker, buy Backwater set/equipment",
+        "key_prerequisites":  "Backwater Bayou access",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Wear 4 pieces of the Backwater Armor Set."
+    },
+    {
+        "id":  "chocolatier",
+        "tile":  "Chocolatier",
+        "primary_method":  "Active Chocolate Factory upgrades to 25M lifetime",
+        "key_prerequisites":  "Chocolate Factory unlocked",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Collect a lifetime total of 25M Chocolate in the Chocolate Factory."
+    },
+    {
+        "id":  "commissioned",
+        "tile":  "Commissioned",
+        "primary_method":  "Grind Dwarven commissions (CH optional later for speed)",
+        "key_prerequisites":  "HOTM access",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "tag:mining"
+                       ],
+        "description":  "Complete 250k mining commissions."
+    },
+    {
+        "id":  "deep_sea_angler",
+        "tile":  "Deep Sea Angler",
+        "primary_method":  "Fish rare sea creatures in Backwater (Banshee/Catfish path)",
+        "key_prerequisites":  "Fishing 10 for better targets",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing"
+                       ],
+        "description":  "Fish up 500k Sea Creatures of Rare or higher rarity."
+    },
+    {
+        "id":  "dilmun_trader",
+        "tile":  "Dilmun Trader",
+        "primary_method":  "Visitor-focused Garden routing with single-plot staples",
+        "key_prerequisites":  "Garden setup, visitor filtering",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "garden_visitors",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Collect 1.25M Copper from Garden Visitors."
+    },
+    {
+        "id":  "end_all_be_al",
+        "tile":  "End All, Be Al",
+        "primary_method":  "Reach Combat 20 then kill Zealot Bruiser",
+        "key_prerequisites":  "End combat setup",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Defeat a Zealot Bruiser."
+    },
+    {
+        "id":  "exterminator_pests",
+        "tile":  "Exterminator (pests)",
+        "primary_method":  "Farm visitor crops and vacuum pests with upgrades",
+        "key_prerequisites":  "Garden progression",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "garden_visitors",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Vacuum 100 Pests."
+    },
+    {
+        "id":  "fisherman_s_folly",
+        "tile":  "Fisherman\u0027s Folly",
+        "primary_method":  "Keep fishing while overlapping with other fishing tiles",
+        "key_prerequisites":  "Fishing loop active",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Fish up an OUTSTANDING treasure or junk."
+    },
+    {
+        "id":  "forgery",
+        "tile":  "Forgery",
+        "primary_method":  "Forge Mithril Drill SX-R226 (includes refined mithril + motor + plate)",
+        "key_prerequisites":  "HOTM/forge progression, multiple days",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "hotm_mining",
+                           "tag:mining"
+                       ],
+        "description":  "Forge a Drill"
+    },
+    {
+        "id":  "legal_duplication",
+        "tile":  "Legal Duplication",
+        "primary_method":  "Stack mining fortune sources (skills, HOTM, gear, potion, cake, pet/event)",
+        "key_prerequisites":  "Mining 20+, HOTM, equipment",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "hotm_mining",
+                           "pet_progression",
+                           "alchemy_brewing",
+                           "tag:mining"
+                       ],
+        "description":  "Reach 270 ? Mining Fortune."
+    },
+    {
+        "id":  "lighter_than_steel",
+        "tile":  "Lighter than steel",
+        "primary_method":  "Forge 4 Mithril equipment pieces",
+        "key_prerequisites":  "Enchanted Mithril + Forge",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "hotm_mining",
+                           "tag:mining"
+                       ],
+        "description":  "Wear 4 pieces of the Mithril Equipment Set."
+    },
+    {
+        "id":  "mirror_dimension",
+        "tile":  "Mirror Dimension",
+        "primary_method":  "Follow efficient Rift-time route (easy Enigma souls first)",
+        "key_prerequisites":  "Rift unlock",
+        "routing_tags":  [
+                             "rift"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "rift_progression",
+                           "tag:rift"
+                       ],
+        "description":  "Reach 1,000s ? Rift Time."
+    },
+    {
+        "id":  "oh_captain_my_captain",
+        "tile":  "Oh Captain, My Captain",
+        "primary_method":  "Backwater fishing for bronze ship upgrades (helm/hull)",
+        "key_prerequisites":  "Bayou access",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Upgrade 2 Ship Parts to Bronze in your Ship."
+    },
+    {
+        "id":  "old_school",
+        "tile":  "Old School",
+        "primary_method":  "Skeleton + spider minions (and active drops) for Runaan\u0027s Bow",
+        "key_prerequisites":  "Collection unlocks",
+        "routing_tags":  [
+                             "combat",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:combat",
+                           "tag:minions"
+                       ],
+        "description":  "Craft a Runaan\u0027s Bow."
+    },
+    {
+        "id":  "shh",
+        "tile":  "Shh...",
+        "primary_method":  "Secret routes in F1 using grapples/pearls, ideally while solo-score pathing",
+        "key_prerequisites":  "Dungeon mobility tools",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "dungeon_score",
+                           "tag:dungeons"
+                       ],
+        "description":  "Find 100 Secrets in Dungeons."
+    },
+    {
+        "id":  "skilled_combat",
+        "tile":  "Skilled (combat)",
+        "primary_method":  "Enderman grinding with overlap into combat-loot tiles",
+        "key_prerequisites":  "End combat setup",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Gain 2.5B Combat experience"
+    },
+    {
+        "id":  "spider_squisher",
+        "tile":  "Spider Squisher",
+        "primary_method":  "AoE clear spiders in Arachne\u0027s Burrow (Dreadlord/mage cleave)",
+        "key_prerequisites":  "Burrow access, AoE setup",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "slayer_tarantula",
+                           "tag:combat"
+                       ],
+        "description":  "Kill 75 spiders in 90 seconds. (Spiders on your private island do not count)"
+    },
+    {
+        "id":  "they_re_prrrrrretty_good",
+        "tile":  "They\u0027re Prrrrrretty good",
+        "primary_method":  "Do Dwarven events for cereal mats and consume",
+        "key_prerequisites":  "Dwarven event uptime",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "tag:mining"
+                       ],
+        "description":  "Consume 4 boxes of Dwarven Cereal"
+    },
+    {
+        "id":  "who_needs_friends",
+        "tile":  "Who needs friends?",
+        "primary_method":  "Solo F1 270 score as Bers with Super Cleaver + 4 dungeon pieces",
+        "key_prerequisites":  "Dungeon combat competence",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "dungeon_score",
+                           "tag:dungeons"
+                       ],
+        "description":  "Obtain a score of at least 270 in Catacombs Floor I without a party"
+    },
+    {
+        "id":  "yummers",
+        "tile":  "Yummers",
+        "primary_method":  "Fish/lootshare Trash Gobblers for worm cans",
+        "key_prerequisites":  "Backwater fishing setup",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Jul 2025"
+                 ],
+        "latest_seen":  "Jul 2025",
+        "latest_seen_iso":  "2025-07",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Open 15 Cans of Worms."
+    },
+    {
+        "id":  "bedazzled_high",
+        "tile":  "Bedazzled (high)",
+        "primary_method":  "Use full cheap talisman path (shop + collection + misc/event options)",
+        "key_prerequisites":  "Larger coin/time budget",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jul 2025",
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "accessory_power",
+                           "tag:utility"
+                       ],
+        "description":  "Equip 22 unique Accessories."
+    },
+    {
+        "id":  "clay_collector",
+        "tile":  "Clay Collector",
+        "primary_method":  "Get starter clay from Backwater/trades, then run clay minions",
+        "key_prerequisites":  "Seed collection 2, minion slots/storage",
+        "routing_tags":  [
+                             "fishing",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:fishing",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 260,000 Clay Collection."
+    },
+    {
+        "id":  "eagle_eyed",
+        "tile":  "Eagle-Eyed",
+        "primary_method":  "Timed target practice with Artisanal Shortbow",
+        "key_prerequisites":  "Weapon purchase",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Complete a timed Target Practice."
+    },
+    {
+        "id":  "gunpowder_collector",
+        "tile":  "Gunpowder Collector",
+        "primary_method":  "Unlock/place Creeper minions after Sneaky Creeper grind",
+        "key_prerequisites":  "Deep Caverns access, minion slots",
+        "routing_tags":  [
+                             "combat",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:combat",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 45,000 Gunpowder Collection."
+    },
+    {
+        "id":  "hyper_reforger",
+        "tile":  "Hyper Reforger",
+        "primary_method":  "Mine End nodes for End Stone Geode and apply reforge",
+        "key_prerequisites":  "End node farming",
+        "routing_tags":  [
+                             "mining",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "tag:mining",
+                           "tag:utility"
+                       ],
+        "description":  "Apply the Hyper reforge to an item."
+    },
+    {
+        "id":  "i_see_stars",
+        "tile":  "I See Stars",
+        "primary_method":  "Upgrade dungeon item to 5 stars using Gold Essence path",
+        "key_prerequisites":  "Super Cleaver + Gold Forger/Malik path",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "tag:dungeons"
+                       ],
+        "description":  "Apply 5 Stars to a dungeon item"
+    },
+    {
+        "id":  "kaboom",
+        "tile":  "KABOOM!",
+        "primary_method":  "Buy Superboom TNT (Walter cheaper than Ophelia) and spam crypts",
+        "key_prerequisites":  "Catacombs access, coin budget",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "tag:dungeons"
+                       ],
+        "description":  "Blow up 75k Crypts in The Catacombs."
+    },
+    {
+        "id":  "mutton_collector",
+        "tile":  "Mutton Collector",
+        "primary_method":  "Run sheep minions with storage/compactors",
+        "key_prerequisites":  "Minion slots, Derpy overlap helps",
+        "routing_tags":  [
+                             "minions"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 50,000 Mutton Collection."
+    },
+    {
+        "id":  "operation_ore",
+        "tile":  "Operation: Ore",
+        "primary_method":  "Mine pure ores in Royal/Divan (mithril/titanium excluded)",
+        "key_prerequisites":  "Dwarven/CH mining routes",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "hotm_mining",
+                           "crystal_hollows",
+                           "tag:mining"
+                       ],
+        "description":  "Break 10M Ore Blocks."
+    },
+    {
+        "id":  "search_and_rescue",
+        "tile":  "Search And Rescue",
+        "primary_method":  "Do daily Fetchur item turn-ins",
+        "key_prerequisites":  "Daily timing",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Help Fetchur find his item."
+    },
+    {
+        "id":  "sightseer",
+        "tile":  "Sightseer",
+        "primary_method":  "Visit 7 islands",
+        "key_prerequisites":  "Basic progression",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "utility_passive",
+                           "tag:utility"
+                       ],
+        "description":  "Visit 7 different public islands."
+    },
+    {
+        "id":  "trouble_is_brewing",
+        "tile":  "Trouble is Brewing...",
+        "primary_method":  "Brew Mana IV (awkward + ench mutton + glowstone)",
+        "key_prerequisites":  "Brewing unlock, glowstone acquisition",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025"
+                 ],
+        "latest_seen":  "Sep 2025",
+        "latest_seen_iso":  "2025-09",
+        "match_keys":  [
+                           "alchemy_brewing",
+                           "tag:utility"
+                       ],
+        "description":  "Brew any level IV or higher potion."
+    },
+    {
+        "id":  "a_best_friend",
+        "tile":  "A Best Friend",
+        "primary_method":  "Craft Jerry pet from Barn egg",
+        "key_prerequisites":  "Early coins, Barn access",
+        "routing_tags":  [
+                             "combat",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:combat",
+                           "tag:utility"
+                       ],
+        "description":  "Craft any pet."
+    },
+    {
+        "id":  "cheetah",
+        "tile":  "Cheetah",
+        "primary_method":  "Obtain Cheetah Talisman",
+        "key_prerequisites":  "Method not readable in source dump (cookie block)",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "accessory_power",
+                           "tag:utility"
+                       ],
+        "description":  "Obtain a Cheetah Talisman."
+    },
+    {
+        "id":  "diversity",
+        "tile":  "Diversity",
+        "primary_method":  "Unlock broad set of easy collections (farm/mining/combat/fishing/foraging)",
+        "key_prerequisites":  "Multi-island progression",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "foraging_treecap",
+                           "tag:utility"
+                       ],
+        "description":  "Unlock 40 unique Collections."
+    },
+    {
+        "id":  "miner",
+        "tile":  "Miner",
+        "primary_method":  "Dwarven commissions + active events to Mining 20",
+        "key_prerequisites":  "HOTM unlock",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "tag:mining"
+                       ],
+        "description":  "Obtain level 20 in the Mining Skill."
+    },
+    {
+        "id":  "mithril_collector",
+        "tile":  "Mithril Collector",
+        "primary_method":  "Mine mithril with Pickobulus cycles",
+        "key_prerequisites":  "HOTM 3 unlock",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "hotm_mining",
+                           "tag:mining"
+                       ],
+        "description":  "Reach 30,000 Mithril Collection."
+    },
+    {
+        "id":  "pufferfish_collector",
+        "tile":  "Pufferfish Collector",
+        "primary_method":  "Fishing minion bootstrap path from raw cod",
+        "key_prerequisites":  "Fishing progression",
+        "routing_tags":  [
+                             "fishing",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:fishing",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 3,500 Pufferfish Collection."
+    },
+    {
+        "id":  "spider_queen",
+        "tile":  "Spider Queen",
+        "primary_method":  "Kill keepers for Arachne\u0027s Calling and summon Arachne",
+        "key_prerequisites":  "Spider\u0027s Den access",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "slayer_tarantula",
+                           "tag:combat"
+                       ],
+        "description":  "Summon Arachne."
+    },
+    {
+        "id":  "strange_eggs",
+        "tile":  "Strange Eggs",
+        "primary_method":  "Farm goblin eggs and throw until Golden Goblin spawns",
+        "key_prerequisites":  "Goblin burrow access, optional SkyMall buff",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "crystal_hollows",
+                           "tag:mining"
+                       ],
+        "description":  "Spawn a Golden Goblin from a Goblin Egg."
+    },
+    {
+        "id":  "sugar_cane_collector",
+        "tile":  "Sugar Cane Collector",
+        "primary_method":  "Unlock cane on Garden and farm to target collection",
+        "key_prerequisites":  "Garden unlock",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Oct 2025"
+                 ],
+        "latest_seen":  "Oct 2025",
+        "latest_seen_iso":  "2025-10",
+        "match_keys":  [
+                           "garden_visitors",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Reach 300,000 Sugar Cane Collection."
+    },
+    {
+        "id":  "battle_ready",
+        "tile":  "Battle-Ready",
+        "primary_method":  "Equip 4/4 Angler equipment",
+        "key_prerequisites":  "Fishing merchant purchases",
+        "routing_tags":  [
+                             "fishing",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing",
+                           "tag:utility"
+                       ],
+        "description":  "Wear 4 pieces of Equipment."
+    },
+    {
+        "id":  "cat",
+        "tile":  "Cat",
+        "primary_method":  "Use fast Cat Talisman route",
+        "key_prerequisites":  "Small coin budget, quest route knowledge",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "accessory_power",
+                           "tag:utility"
+                       ],
+        "description":  "Obtain a Cat Talisman."
+    },
+    {
+        "id":  "end_stone_collector",
+        "tile":  "End Stone Collector",
+        "primary_method":  "Mine Ender Nodes + kill endermites, or run endstone minions",
+        "key_prerequisites":  "End access/minion slots",
+        "routing_tags":  [
+                             "mining",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:mining",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 60,000 End Stone Collection."
+    },
+    {
+        "id":  "essence_of_dragons",
+        "tile":  "Essence Of Dragons",
+        "primary_method":  "Farm Endermen for Ender armor and salvage",
+        "key_prerequisites":  "Looting/Luck enchants, Void Slate",
+        "routing_tags":  [
+                             "combat",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "enderman_combat",
+                           "dungeon_item_progression",
+                           "tag:combat",
+                           "tag:utility"
+                       ],
+        "description":  "Collect 1M Dragon Essence."
+    },
+    {
+        "id":  "i_am_speed",
+        "tile":  "I Am Speed",
+        "primary_method":  "Splash or Rogue Sword burst to 200 speed",
+        "key_prerequisites":  "Splash or Jamie item",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Reach 200 ? Speed."
+    },
+    {
+        "id":  "love_is_all_around",
+        "tile":  "Love Is All Around",
+        "primary_method":  "Romero questline to Mediocre Ring of Love",
+        "key_prerequisites":  "1 Yellow Rock + 15 poppy + 64 emerald",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Oct 2025",
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Obtain a Mediocre Ring of Love."
+    },
+    {
+        "id":  "minion_machine",
+        "tile":  "Minion Machine",
+        "primary_method":  "Rush easy minion families (mining/combat/foraging/farming list)",
+        "key_prerequisites":  "Minion slot planning",
+        "routing_tags":  [
+                             "minions"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "fishing_minions",
+                           "foraging_treecap",
+                           "minion_throughput",
+                           "tag:minions"
+                       ],
+        "description":  "Obtain 100 unique Minions."
+    },
+    {
+        "id":  "podium_position",
+        "tile":  "Podium Position",
+        "primary_method":  "Bronze Jacob via Wheat first (Garden optional fallback)",
+        "key_prerequisites":  "Farming 10 + contest timing",
+        "routing_tags":  [
+                             "farming"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "garden_visitors",
+                           "jacob_contest",
+                           "tag:farming"
+                       ],
+        "description":  "Obtain a Bronze or higher Medal in Jacob\u0027s Farming Contest."
+    },
+    {
+        "id":  "relic_researcher",
+        "tile":  "Relic Researcher",
+        "primary_method":  "Use SBE/Skytils waypoints or wiki coordinates for 28 relics",
+        "key_prerequisites":  "Spiders\u0027 Den access",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Find 28 Relics in the Spider\u0027s Den."
+    },
+    {
+        "id":  "skilled_fishing",
+        "tile":  "Skilled (fishing)",
+        "primary_method":  "Backwater fishing setup with SCC/fishing speed boosts",
+        "key_prerequisites":  "Angler gear, rod enchants",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing"
+                       ],
+        "description":  "Gain 250M Fishing experience"
+    },
+    {
+        "id":  "slaughterer",
+        "tile":  "Slaughterer",
+        "primary_method":  "Use T2 Revenant after Void/Dreadlord setup for \u003c80s clear",
+        "key_prerequisites":  "Slayer progression",
+        "routing_tags":  [
+                             "slayer",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Nov 2025"
+                 ],
+        "latest_seen":  "Nov 2025",
+        "latest_seen_iso":  "2025-11",
+        "match_keys":  [
+                           "slayer_revenant",
+                           "tag:slayer",
+                           "tag:combat"
+                       ],
+        "description":  "Kill any tier II Slayer Boss within 80 seconds."
+    },
+    {
+        "id":  "a_hard_day_s_work",
+        "tile":  "A Hard Day\u0027s Work",
+        "primary_method":  "Farm easy Jacob crops (wheat/carrot/potato) for medals/tickets",
+        "key_prerequisites":  "Farming 10, Jacob access, optional Garden",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "garden_visitors",
+                           "jacob_contest",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Collect 100k Jacob\u0027s Tickets from Farming Events!"
+    },
+    {
+        "id":  "acacia_log_collector",
+        "tile":  "Acacia Log Collector",
+        "primary_method":  "Place ~8 T1 Acacia minions",
+        "key_prerequisites":  "Acacia unlock, minion slots/storage",
+        "routing_tags":  [
+                             "foraging",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "fishing_minions",
+                           "foraging_treecap",
+                           "minion_throughput",
+                           "tag:foraging",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 125,000 Acacia Log Collection."
+    },
+    {
+        "id":  "agricultural_revolution",
+        "tile":  "Agricultural Revolution",
+        "primary_method":  "Farm Sugar Cane in Garden; objective is blocks broken",
+        "key_prerequisites":  "Garden progression",
+        "routing_tags":  [
+                             "farming",
+                             "garden"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "garden_visitors",
+                           "tag:farming",
+                           "tag:garden"
+                       ],
+        "description":  "Harvest 10M crops."
+    },
+    {
+        "id":  "essence_of_spiders",
+        "tile":  "Essence Of Spiders",
+        "primary_method":  "Kill Arachne repeatedly; salvage Arachnal drops",
+        "key_prerequisites":  "Spider\u0027s Den progression",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Nov 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "slayer_tarantula",
+                           "tag:combat"
+                       ],
+        "description":  "Collect 1M Spider Essence."
+    },
+    {
+        "id":  "extra_storage",
+        "tile":  "Extra Storage",
+        "primary_method":  "Fast foraging route (Treecap/Canopy/Galatea) to Large Storage",
+        "key_prerequisites":  "Foraging tools/armor",
+        "routing_tags":  [
+                             "foraging"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "foraging_treecap",
+                           "minion_throughput",
+                           "tag:foraging"
+                       ],
+        "description":  "Craft a Large Storage."
+    },
+    {
+        "id":  "ferocious",
+        "tile":  "Ferocious",
+        "primary_method":  "Dirty reforge + Century Cake (or flare) to hit 3 ferocity",
+        "key_prerequisites":  "Smithmonger access",
+        "routing_tags":  [
+                             "utility",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:utility",
+                           "tag:combat"
+                       ],
+        "description":  "Reach 3 ? Ferocity."
+    },
+    {
+        "id":  "goblin_s_treasure",
+        "tile":  "Goblin\u0027s Treasure",
+        "primary_method":  "Mine ores for Golden Goblins; optimize with SkyMall/Luck perks",
+        "key_prerequisites":  "HOTM perks, event timing",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:mining"
+                       ],
+        "description":  "Kill 10k Golden Goblins."
+    },
+    {
+        "id":  "high_score",
+        "tile":  "High Score!",
+        "primary_method":  "Get F1 230+ score (usually carry path)",
+        "key_prerequisites":  "Dungeons entry",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "dungeon_score",
+                           "tag:dungeons"
+                       ],
+        "description":  "Obtain a score of 230 or higher on Floor 1 of Catacombs."
+    },
+    {
+        "id":  "i_ve_got_chills",
+        "tile":  "I\u0027ve got Chills!",
+        "primary_method":  "Farm Glacite walkers for full Glacite armor set",
+        "key_prerequisites":  "Dwarven Mines access",
+        "routing_tags":  [
+                             "mining",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:mining",
+                           "tag:combat"
+                       ],
+        "description":  "Wear 4 pieces of the Glacite Armor Set."
+    },
+    {
+        "id":  "meiser",
+        "tile":  "Meiser",
+        "primary_method":  "Passive bank deposit thresholds",
+        "key_prerequisites":  "Bank access",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "utility_passive",
+                           "tag:utility"
+                       ],
+        "description":  "Store 50,000 Coins in your Bank."
+    },
+    {
+        "id":  "pair_up",
+        "tile":  "Pair Up!",
+        "primary_method":  "Rush Enchanting 10, craft Experimentation Table, do daily experiments",
+        "key_prerequisites":  "Enchanting setup",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Nov 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Find 3 Pairs in the Experimentation Table."
+    },
+    {
+        "id":  "pet_xp",
+        "tile":  "Pet (XP)",
+        "primary_method":  "Carrot candy spam on easy pets (Silverfish/Bee), add pet XP boosters",
+        "key_prerequisites":  "Candy materials + pets",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:utility"
+                       ],
+        "description":  "Gain 2.5B Pet experience."
+    },
+    {
+        "id":  "petsitter",
+        "tile":  "Petsitter",
+        "primary_method":  "Upgrade a cheap pet at Kat (often Silverfish)",
+        "key_prerequisites":  "Kat access, coin timer",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:utility"
+                       ],
+        "description":  "Upgrade a pet with Kat."
+    },
+    {
+        "id":  "quick_reel",
+        "tile":  "Quick Reel",
+        "primary_method":  "Angler armor + rod enchants (Angler/Lure/Piscary), fast-water spots",
+        "key_prerequisites":  "Fishing gear",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing"
+                       ],
+        "description":  "Summon 3 sea creatures within 75 seconds."
+    },
+    {
+        "id":  "skill_average",
+        "tile":  "Skill Average",
+        "primary_method":  "Foraging (Galatea figs) + Fishing 10 Nope-to-Carol + Absorption Alchemy",
+        "key_prerequisites":  "Cross-skill route planning",
+        "routing_tags":  [
+                             "utility",
+                             "foraging",
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "foraging_treecap",
+                           "alchemy_brewing",
+                           "tag:utility",
+                           "tag:foraging",
+                           "tag:fishing"
+                       ],
+        "description":  "Reach a non-cosmetic Skill Average of 17."
+    },
+    {
+        "id":  "taking_flight",
+        "tile":  "Taking Flight",
+        "primary_method":  "Silk-touch mushroom blocks to unlock Magical Mushroom Soup and craft/use",
+        "key_prerequisites":  "Mushroom Desert access",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Consume a Magical Mushroom Soup."
+    },
+    {
+        "id":  "titanic_reforger",
+        "tile":  "Titanic Reforger",
+        "primary_method":  "Reforge armor at Blacksmith with Titanic",
+        "key_prerequisites":  "Reforge material",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Apply the Titanic reforge to an item."
+    },
+    {
+        "id":  "warrior",
+        "tile":  "Warrior",
+        "primary_method":  "Combat leveling via Glacite Walkers then Endermen",
+        "key_prerequisites":  "Combat route progression",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "tag:combat"
+                       ],
+        "description":  "Obtain level 18 in the Combat Skill."
+    },
+    {
+        "id":  "weird_flex",
+        "tile":  "Weird Flex",
+        "primary_method":  "Acquire Training Weight from dungeons and wait 100 min in inventory",
+        "key_prerequisites":  "Dungeon drop + timer",
+        "routing_tags":  [
+                             "dungeons",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Jan 2026"
+                 ],
+        "latest_seen":  "Jan 2026",
+        "latest_seen_iso":  "2026-01",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "tag:dungeons",
+                           "tag:utility"
+                       ],
+        "description":  "Gain 5 ? Strength from a Training Weight."
+    },
+    {
+        "id":  "clown_collab",
+        "tile":  "Clown Collab",
+        "primary_method":  "Bonzo grind via carries or solo Bers with dungeon drops",
+        "key_prerequisites":  "Catacombs progression",
+        "routing_tags":  [
+                             "dungeons",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "dungeon_item_progression",
+                           "tag:dungeons",
+                           "tag:combat"
+                       ],
+        "description":  "Defeat Bonzo 5,000 times."
+    },
+    {
+        "id":  "critical",
+        "tile":  "Critical",
+        "primary_method":  "Wear 4x Fierce Ender armor in End",
+        "key_prerequisites":  "Ender armor + reforge",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Reach 100% ? Crit Damage."
+    },
+    {
+        "id":  "emerald_treasure",
+        "tile":  "Emerald Treasure",
+        "primary_method":  "Hit 230+ dungeon score on Entrance/F1 (carry or PF)",
+        "key_prerequisites":  "Dungeons access",
+        "routing_tags":  [
+                             "dungeons"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Nov 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "dungeon_score",
+                           "tag:dungeons"
+                       ],
+        "description":  "Unlock an Emerald Dungeon Chest."
+    },
+    {
+        "id":  "esteemed_enchanter",
+        "tile":  "Esteemed Enchanter",
+        "primary_method":  "Obtain Level VI book via dungeon chest or Stonk fallback",
+        "key_prerequisites":  "Dungeons or 499,999 coin fallback",
+        "routing_tags":  [
+                             "dungeons",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "tag:dungeons",
+                           "tag:utility"
+                       ],
+        "description":  "Obtain a Level VI Enchanted Book."
+    },
+    {
+        "id":  "exterminator_mobs",
+        "tile":  "Exterminator (mobs)",
+        "primary_method":  "Kill Endermen (End or private island chamber)",
+        "key_prerequisites":  "End unlock, combat starter gear",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "tag:combat"
+                       ],
+        "description":  "Kill 10,000 mobs."
+    },
+    {
+        "id":  "fisherman",
+        "tile":  "Fisherman",
+        "primary_method":  "Buy and equip full Angler armor set",
+        "key_prerequisites":  "Fish merchant coins",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing"
+                       ],
+        "description":  "Wear 4 pieces of the Angler Armor Set."
+    },
+    {
+        "id":  "gold_ingot_collector",
+        "tile":  "Gold Ingot Collector",
+        "primary_method":  "Mine Pure Gold with Pickobulus, upgrade mining fortune",
+        "key_prerequisites":  "HOTM 3+",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "hotm_mining",
+                           "tag:mining"
+                       ],
+        "description":  "Reach 60,000 Gold Ingot Collection."
+    },
+    {
+        "id":  "healthy_low",
+        "tile":  "Healthy (low)",
+        "primary_method":  "Passive health thresholds from normal progression",
+        "key_prerequisites":  "Basic armor/stats",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "utility_passive",
+                           "tag:combat"
+                       ],
+        "description":  "Reach 250 ? Health."
+    },
+    {
+        "id":  "king_of_the_seas",
+        "tile":  "King Of The... Seas?",
+        "primary_method":  "Reach Fishing 14, use Salmon + Carrot Bait, fish Carrot King",
+        "key_prerequisites":  "Fishing grind + bait crafting",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Fish up a Carrot King"
+    },
+    {
+        "id":  "lucky_looter",
+        "tile":  "Lucky Looter",
+        "primary_method":  "Enderman grind with Void/Fierce or Dreadlord/Wise setup",
+        "key_prerequisites":  "Looting/Luck enchants highly recommended",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Nov 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Loot 250k drops with a chance of 1% or lower"
+    },
+    {
+        "id":  "lumberjack",
+        "tile":  "Lumberjack",
+        "primary_method":  "Oak chopping early, then Treecap + Galatea fig trees for higher XP",
+        "key_prerequisites":  "Foraging tools/armor",
+        "routing_tags":  [
+                             "foraging"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "foraging_treecap",
+                           "tag:foraging"
+                       ],
+        "description":  "Obtain level 5 in the Foraging Skill."
+    },
+    {
+        "id":  "revenant_horror",
+        "tile":  "Revenant Horror",
+        "primary_method":  "Spawn/kill T2+ Revs via Crypt Ghoul loops and Abiphone Maddox",
+        "key_prerequisites":  "Combat/slayer setup",
+        "routing_tags":  [
+                             "slayer",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "slayer_revenant",
+                           "tag:slayer",
+                           "tag:combat"
+                       ],
+        "description":  "Kill 10,000 Revenant Horror of tier II or higher."
+    },
+    {
+        "id":  "rock_solid",
+        "tile":  "Rock Solid",
+        "primary_method":  "Do commissions to Pickobulus and mine ores/gold for Rock pet XP; Kat upgrade when needed",
+        "key_prerequisites":  "HOTM progression, Kat coins/time",
+        "routing_tags":  [
+                             "mining",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "hotm_mining",
+                           "pet_progression",
+                           "tag:mining",
+                           "tag:utility"
+                       ],
+        "description":  "Equip a Common or higher tiered Rock Pet."
+    },
+    {
+        "id":  "scavenger",
+        "tile":  "Scavenger",
+        "primary_method":  "Enderman grind with Scavenger enchant (Dreadlord default Scav 5 useful)",
+        "key_prerequisites":  "Enchanted sword",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Jul 2025",
+                     "Oct 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Loot 250M Coins through the Scavenger Enchantment"
+    },
+    {
+        "id":  "sea_summoner",
+        "tile":  "Sea Summoner",
+        "primary_method":  "8/8 Angler + Angler rod enchant (prefer Angler 5)",
+        "key_prerequisites":  "Fishing merchant gear",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "fishing_speed_scc",
+                           "tag:fishing"
+                       ],
+        "description":  "Reach 30% a Sea Creature Chance."
+    },
+    {
+        "id":  "sponge_collector",
+        "tile":  "Sponge Collector",
+        "primary_method":  "Fishing minion route with merchant bootstrap",
+        "key_prerequisites":  "Fishing progression/minion slots",
+        "routing_tags":  [
+                             "fishing",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:fishing",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 900 Sponge Collection."
+    },
+    {
+        "id":  "tropical_fish_collector",
+        "tile":  "Tropical Fish Collector",
+        "primary_method":  "50 cod bootstrap then fishing minions",
+        "key_prerequisites":  "Fishing setup/minion slots",
+        "routing_tags":  [
+                             "fishing",
+                             "minions"
+                         ],
+        "seen":  [
+                     "Feb 2026"
+                 ],
+        "latest_seen":  "Feb 2026",
+        "latest_seen_iso":  "2026-02",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:fishing",
+                           "tag:minions"
+                       ],
+        "description":  "Reach 400 Tropical Fish Collection."
+    },
+    {
+        "id":  "a_lost_cause",
+        "tile":  "A Lost Cause",
+        "primary_method":  "Kill Lost Adventurer in dungeons (Mage ult or Bers clear)",
+        "key_prerequisites":  "Dungeon entry, basic dungeon setup",
+        "routing_tags":  [
+                             "dungeons",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:dungeons",
+                           "tag:combat"
+                       ],
+        "description":  "Kill a Lost Adventurer."
+    },
+    {
+        "id":  "amber_crystal",
+        "tile":  "Amber Crystal",
+        "primary_method":  "Get King scent and claim from Queen (Goblin Egg route)",
+        "key_prerequisites":  "HOTM progress, Crystal Hollows access",
+        "routing_tags":  [
+                             "mining",
+                             "ch"
+                         ],
+        "seen":  [
+                     "Jan 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "crystal_hollows",
+                           "tag:mining",
+                           "tag:ch"
+                       ],
+        "description":  "Obtain an Amber Crystal in the Crystal Hollows."
+    },
+    {
+        "id":  "bait",
+        "tile":  "Bait",
+        "primary_method":  "Fish with Salmon Armor + Frog pet, deposit chum",
+        "key_prerequisites":  "Fishing setup, chum bucket access",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:fishing"
+                       ],
+        "description":  "Deposit Chum in Chum Buckets."
+    },
+    {
+        "id":  "bedazzled_low",
+        "tile":  "Bedazzled (low)",
+        "primary_method":  "Buy Adventurer accessories + cheap craftables (Potion Affinity, Compass etc.)",
+        "key_prerequisites":  "Small coin budget, basic collections",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "accessory_power",
+                           "alchemy_brewing",
+                           "tag:utility"
+                       ],
+        "description":  "Equip 7 unique Accessories."
+    },
+    {
+        "id":  "brewer",
+        "tile":  "Brewer",
+        "primary_method":  "Mine/buy gold -\u003e brew Absorption pots to Alchemy 16",
+        "key_prerequisites":  "Brewing stand, potion mats",
+        "routing_tags":  [
+                             "utility",
+                             "mining"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "alchemy_brewing",
+                           "tag:utility",
+                           "tag:mining"
+                       ],
+        "description":  "Obtain level 16 in the Alchemy Skill."
+    },
+    {
+        "id":  "carry_on",
+        "tile":  "Carry-On",
+        "primary_method":  "Unlock Leather 3 via Barn cows, craft Small Backpack",
+        "key_prerequisites":  "Barn combat/bow speeds it up",
+        "routing_tags":  [
+                             "combat",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:combat",
+                           "tag:utility"
+                       ],
+        "description":  "Craft a Small Backpack."
+    },
+    {
+        "id":  "collecting_data",
+        "tile":  "Collecting Data",
+        "primary_method":  "Passive bestiary milestones; ensure Bramass/Grandma Wolf interactions",
+        "key_prerequisites":  "Spiders\u0027 Den visit",
+        "routing_tags":  [
+                             "combat",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Nov 2025",
+                     "Jan 2026",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "bestiary_passive",
+                           "utility_passive",
+                           "tag:combat",
+                           "tag:utility"
+                       ],
+        "description":  "Reach Bestiary Milestone 3."
+    },
+    {
+        "id":  "collector_tier_count",
+        "tile":  "Collector (tier count)",
+        "primary_method":  "Passive collection accumulation; target easy mining/farming/combat sets",
+        "key_prerequisites":  "Broad gameplay coverage",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jul 2025",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "utility_passive",
+                           "tag:utility"
+                       ],
+        "description":  "Get 10 Collections to at least tier 7."
+    },
+    {
+        "id":  "commission_master",
+        "tile":  "Commission Master",
+        "primary_method":  "Complete initial 4 commissions quickly",
+        "key_prerequisites":  "Dwarven access",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "tag:mining"
+                       ],
+        "description":  "Complete 4 Commissions in the Dwarven Mines, Crystal Hollows, or Glacite Tunnels."
+    },
+    {
+        "id":  "diamond_collector",
+        "tile":  "Diamond Collector",
+        "primary_method":  "Mine Royal Mines diamonds with Pickobulus + Prospecting setup",
+        "key_prerequisites":  "HOTM 3+, mining speed/fortune",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "hotm_mining",
+                           "tag:mining"
+                       ],
+        "description":  "Reach 40,000 Diamond Collection."
+    },
+    {
+        "id":  "enderman_slayer",
+        "tile":  "Enderman Slayer",
+        "primary_method":  "Enderman grinding (End or private island chamber variant)",
+        "key_prerequisites":  "Void/Dreadlord setup, End access",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Nov 2025",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Kill 2.5M Endermen."
+    },
+    {
+        "id":  "fashionable",
+        "tile":  "Fashionable",
+        "primary_method":  "Use curated easy armor sets (NPC + common crafts + fishing/mining drops)",
+        "key_prerequisites":  "Wardrobe management, set list",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Jan 2026",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:utility"
+                       ],
+        "description":  "Wear 15 unique Armor Sets."
+    },
+    {
+        "id":  "friend_of_the_seas",
+        "tile":  "Friend Of The Seas",
+        "primary_method":  "Fish 250 SC for Dolphin, then Kat-upgrade to Uncommon",
+        "key_prerequisites":  "Fishing grind, 24h Kat timer",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:fishing"
+                       ],
+        "description":  "Equip an Uncommon or higher tiered Dolphin Pet."
+    },
+    {
+        "id":  "healthy_high",
+        "tile":  "Healthy (high)",
+        "primary_method":  "Ender armor + splash buff to push 1000 health",
+        "key_prerequisites":  "Splash access",
+        "routing_tags":  [
+                             "combat",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat",
+                           "tag:utility"
+                       ],
+        "description":  "Reach 1,000 ? Health."
+    },
+    {
+        "id":  "new_savings",
+        "tile":  "New Savings",
+        "primary_method":  "Pig minion route (1-2 minions, medium storage) to Piggy Bank",
+        "key_prerequisites":  "Pig recipe + minion slots",
+        "routing_tags":  [
+                             "minions",
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Oct 2025",
+                     "Jan 2026",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "utility_passive",
+                           "tag:minions",
+                           "tag:utility"
+                       ],
+        "description":  "Craft a Piggy Bank."
+    },
+    {
+        "id":  "pet_hoarder",
+        "tile":  "Pet Hoarder",
+        "primary_method":  "Prioritize cheap craftable + easy non-craftable pet list",
+        "key_prerequisites":  "Kat timer and Galatea/Frog access for 12-pet variant",
+        "routing_tags":  [
+                             "utility"
+                         ],
+        "seen":  [
+                     "Sep 2025",
+                     "Nov 2025",
+                     "Jan 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "pet_progression",
+                           "tag:utility"
+                       ],
+        "description":  "Obtain 3 unique Pets."
+    },
+    {
+        "id":  "poseidon",
+        "tile":  "Poseidon",
+        "primary_method":  "Use Salmon + Frog + Chum bucket, fish your own SCs only",
+        "key_prerequisites":  "Fishing setup",
+        "routing_tags":  [
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:fishing"
+                       ],
+        "description":  "Summon 100k Sea Creatures."
+    },
+    {
+        "id":  "powder_collector",
+        "tile":  "Powder Collector",
+        "primary_method":  "Farm mining events; optimize around 2x powder + Fetchur/Puzzler",
+        "key_prerequisites":  "Dwarven access",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:mining"
+                       ],
+        "description":  "Collect 25,000 Mithril Powder."
+    },
+    {
+        "id":  "prismarine_crystals_collector",
+        "tile":  "Prismarine Crystals Collector",
+        "primary_method":  "Place ~8 Fishing minions with storage",
+        "key_prerequisites":  "Fishing minion recipe/slots",
+        "routing_tags":  [
+                             "minions",
+                             "fishing"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "fishing_minions",
+                           "minion_throughput",
+                           "tag:minions",
+                           "tag:fishing"
+                       ],
+        "description":  "Reach 1,500 Prismarine Crystals Collection."
+    },
+    {
+        "id":  "sand_collector",
+        "tile":  "Sand Collector",
+        "primary_method":  "Prospecting setup + enchanted shovel; defer until mining build complete",
+        "key_prerequisites":  "Mining fortune investment",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "tag:mining"
+                       ],
+        "description":  "Reach 47,500 Sand Collection."
+    },
+    {
+        "id":  "skilled_mining",
+        "tile":  "Skilled (mining)",
+        "primary_method":  "Dwarven commissions with Silverfish + mining reforges/gear",
+        "key_prerequisites":  "HOTM + mining setup",
+        "routing_tags":  [
+                             "mining"
+                         ],
+        "seen":  [
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "dwarven_commissions",
+                           "tag:mining"
+                       ],
+        "description":  "Gain 750M Mining experience"
+    },
+    {
+        "id":  "slayer",
+        "tile":  "Slayer",
+        "primary_method":  "Fastest common path: Revenant Slayer to level 3",
+        "key_prerequisites":  "Maddox access",
+        "routing_tags":  [
+                             "slayer",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "slayer_revenant",
+                           "tag:slayer",
+                           "tag:combat"
+                       ],
+        "description":  "Reach Level 3 for any Slayer boss."
+    },
+    {
+        "id":  "strongman",
+        "tile":  "Strongman",
+        "primary_method":  "Hold Void Sword with enough Ender armor pieces for threshold",
+        "key_prerequisites":  "Ender armor + sword",
+        "routing_tags":  [
+                             "combat"
+                         ],
+        "seen":  [
+                     "Oct 2025",
+                     "Nov 2025",
+                     "Jan 2026",
+                     "Feb 2026",
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "enderman_combat",
+                           "tag:combat"
+                       ],
+        "description":  "Reach 120 ? Strength."
+    },
+    {
+        "id":  "tarantula_broodfather",
+        "tile":  "Tarantula Broodfather",
+        "primary_method":  "Kill T2+ taras; Dreadlord can speed spawning",
+        "key_prerequisites":  "Slayer access, Cleave helps",
+        "routing_tags":  [
+                             "slayer",
+                             "combat"
+                         ],
+        "seen":  [
+                     "Mar 2026"
+                 ],
+        "latest_seen":  "Mar 2026",
+        "latest_seen_iso":  "2026-03",
+        "match_keys":  [
+                           "slayer_tarantula",
+                           "tag:slayer",
+                           "tag:combat"
+                       ],
+        "description":  "Kill 10,000 Tarantula Broodfather of tier II or higher."
+    }
+]
