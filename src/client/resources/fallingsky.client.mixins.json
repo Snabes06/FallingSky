@@ -4,7 +4,9 @@
   "package": "sw.surasnipers.fallingsky.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "EntityRendererMixin"
+    "EntityRendererMixin",
+    "EntityRendererOutlineMixin",
+    "EntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
