@@ -1,11 +1,15 @@
 package sw.surasnipers.fallingsky.client
 
+
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.option.KeyBinding
 import net.minecraft.entity.Entity
+import net.minecraft.server.command.CommandManager
+import net.minecraft.text.Text
 import net.minecraft.util.hit.HitResult
 import net.minecraft.world.RaycastContext
 import org.lwjgl.glfw.GLFW
@@ -43,7 +47,7 @@ class FallingskyClient : ClientModInitializer {
                 val hitPos = hitResult.pos
                 val distToHit = playerPos.distanceTo(hitPos)
                 val distToEntity = playerPos.distanceTo(entityPos)
-                if (distToHit < distToEntity - 1.0) { // Allow some tolerance for entity size
+                if (distToHit < distToEntity - 1.0) {
                     return false
                 }
             }
@@ -69,6 +73,15 @@ class FallingskyClient : ClientModInitializer {
                 glowEnabled = !glowEnabled
                 println("Glow toggled: $glowEnabled")
             }
+        }
+
+        CommandRegistrationCallback.EVENT.register { dispatcher, _, _ ->
+            dispatcher.register(
+                CommandManager.literal("test").executes {
+                    MinecraftClient.getInstance().player?.sendMessage(Text.of("Test command executed!"), false)
+                    1
+                }
+            )
         }
     }
 }
