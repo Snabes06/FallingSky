@@ -95,5 +95,18 @@ class FallingskyClient : ClientModInitializer {
 
         }
 
+
+        CommandRegistrationCallback.EVENT.register { dispatcher, _, _->
+            dispatcher.register(
+                CommandManager.literal("eglow")
+                    .then(CommandManager.argument("target", EntityArgumentType.entities())
+                        .executes { context ->
+                            MinecraftClient.getInstance().player?.sendMessage(Text.of("Glow toggled: $glowEnabled"), false)
+                            1
+                        })
+
+            )
+
+        }
     }
 }
