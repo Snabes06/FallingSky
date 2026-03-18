@@ -1,12 +1,14 @@
 package sw.surasnipers.fallingsky.client
 
 
+import com.mojang.brigadier.arguments.BoolArgumentType
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.option.KeyBinding
+import net.minecraft.command.argument.EntityArgumentType
 import net.minecraft.entity.Entity
 import net.minecraft.server.command.CommandManager
 import net.minecraft.text.Text
@@ -77,11 +79,21 @@ class FallingskyClient : ClientModInitializer {
 
         CommandRegistrationCallback.EVENT.register { dispatcher, _, _ ->
             dispatcher.register(
-                CommandManager.literal("test").executes {
-                    MinecraftClient.getInstance().player?.sendMessage(Text.of("Test command executed!"), false)
-                    1
-                }
+                CommandManager.literal("glow")
+                    .then(CommandManager.argument("value", BoolArgumentType.bool()).executes { context ->
+                        val newGlow = BoolArgumentType.getBool(context, "value")
+                        glowEnabled = newGlow
+                        MinecraftClient.getInstance().player?.sendMessage(Text.of("Glow set to whit varibule: $glowEnabled"), false)
+                        1
+                    })
+                    .executes{context ->
+                        glowEnabled = !glowEnabled
+                        MinecraftClient.getInstance().player?.sendMessage(Text.of("Glow toggled: $glowEnabled"), false)
+                        1
+                    }
             )
+
         }
+
     }
 }
