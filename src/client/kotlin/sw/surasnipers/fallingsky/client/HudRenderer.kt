@@ -11,19 +11,94 @@ class HudRenderer : HudElement {
         val client = MinecraftClient.getInstance()
         val textRenderer = client.textRenderer
 
-        // Dark grey color with 33% opacity
-        // 0x54 is approximately 33% of 255 (84/255 = 0.33)
-        val backgroundColor = 0x54404040.toInt()
-        
-        // Draw the background box (enlarged to fit text)
-        drawContext.fill(10, 10, 120, 60, backgroundColor)
+        // If not in world, don't render (though InGameHud usually handles this)
+        if (client.world == null) return
 
-        // Draw 3 lines of temporary text in white
-        val textColor = 0xFFFFFFFF.toInt()
+        // Update goals if the bingo card is open
+        if (BingoRouter.isBingoCardOpen()) {
+            BingoRouter.updateGoals()
+        }
+
+        val goals = BingoRouter.currentGoals
+        if (goals.isEmpty()) {
+            // Debug text to show HUD is registered but goals are missing
+            drawContext.drawText(
+                textRenderer,
+                Text.literal("[Bingo Debug] No Goals Loaded"),
+                10,
+                10,
+                0xFFFF0000.toInt(),
+                true
+            )
+            return
+        }
+
+        // Dark grey color with 80% opacity for better visibility during debug
+        val backgroundColor = 0xCC202020.toInt()
+        val borderColor = 0xFFFFAA00.toInt() // Gold/Orange border
         
-        // Using drawText(textRenderer, text, x, y, color, shadow)
-        drawContext.drawText(textRenderer, Text.literal("Line 1: Item 1"), 15, 15, textColor, true)
-        drawContext.drawText(textRenderer, Text.literal("Line 2: Item 2"), 15, 30, textColor, true)
-        drawContext.drawText(textRenderer, Text.literal("Line 3: Item 3"), 15, 45, textColor, true)
+        // Calculate the height needed (15 pixels per goal + padding)
+        val headerHeight = if (BingoRouter.isUsingTemplates) 15 else 0
+        val boxHeight = (goals.size * 15 + 10 + headerHeight).coerceAtLeast(20)
+        val boxWidth = 850
+        
+        // Draw the background box and border
+        drawContext.fill(10, 10, 10 + boxWidth, 10 + boxHeight, backgroundColor)
+        // Draw simple border lines
+        drawContext.fill(10, 10, 10 + boxWidth, 11, borderColor) // Top
+        drawContext.fill(10, 10 + boxHeight - 1, 10 + boxWidth, 10 + boxHeight, borderColor) // Bottom
+        drawContext.fill(10, 10, 11, 10 + boxHeight, borderColor) // Left
+        drawContext.fill(10 + boxWidth - 1, 10, 10 + boxWidth, 10 + boxHeight, borderColor) // Right
+
+        val textColor = 0xFFFFFFFF.toInt()
+
+        if (BingoRouter.isUsingTemplates) {
+            drawContext.drawText(
+                textRenderer,
+                Text.literal("Template Board (Debug Mode)"),
+                15,
+                15,
+                0xFFFFAA00.toInt(), // Gold/Orange
+                true
+            )
+        }
+        
+        // Render each goal name
+        goals.forEachIndexed { index, goal ->
+            val yOffset = 15 + headerHeight + (index * 15)
+            
+            // Draw the goal name
+            drawContext.drawText(
+                textRenderer, 
+                Text.literal(goal.name), 
+                15, 
+                yOffset, 
+                textColor, 
+                true
+            )
+
+            // Show the goal data (description and primary method) if it's there
+            if (goal.data != null) {
+                // Draw description (the "actual goal")
+                drawContext.drawText(
+                    textRenderer,
+                    Text.literal(": ${goal.data.description}"),
+                    170, // Offset for description
+                    yOffset,
+                    0xFFAAAAAA.toInt(), // Light Gray
+                    true
+                )
+
+                // Show the primary method
+                drawContext.drawText(
+                    textRenderer,
+                    Text.literal("- ${goal.data.primary_method}"),
+                    520, // Offset for primary method
+                    yOffset,
+                    0xFFFFFF55.toInt(), // Light Yellow
+                    true
+                )
+            }
+        }
     }
 }

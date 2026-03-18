@@ -91,7 +91,7 @@ class WorldLineRenderer : WorldRenderEvents.EndMain {
         val normalX = 0f
         val normalY = 1f
         val normalZ = 0f
-        val width = 6.0f
+        val width = 3.0f
 
         // Bottom 4 edges
         addVertex(vertexConsumer, matrices, x1, y1, z1, r, g, b, a, normalX, normalY, normalZ, width)
@@ -157,12 +157,12 @@ class WorldLineRenderer : WorldRenderEvents.EndMain {
         vertexConsumer.vertex(matrices, x1, y1, z1)
             .color(r, g, b, a)
             .normal(0f, 1f, 0f)
-            .lineWidth(6.0f) // Required element in 1.21.11 LINES format
+            .lineWidth(3.0f) // Required element in 1.21.11 LINES format
         
         vertexConsumer.vertex(matrices, x2, y2, z2)
             .color(r, g, b, a)
             .normal(0f, 1f, 0f)
-            .lineWidth(6.0f) // Required element in 1.21.11 LINES format
+            .lineWidth(3.0f) // Required element in 1.21.11 LINES format
     }
 
 }
