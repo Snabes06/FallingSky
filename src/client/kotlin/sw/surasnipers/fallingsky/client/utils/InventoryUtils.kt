@@ -8,25 +8,19 @@ import net.minecraft.screen.slot.Slot
 
 object InventoryUtils {
 
-    /**
-     * Gets the title of the currently open inventory.
-     */
+    /** Gets the title of the currently open inventory. */
     fun getInventoryName(): String? {
         val screen = MinecraftClient.getInstance().currentScreen
         return screen?.title?.string
     }
 
-    /**
-     * Checks if any container (chest, etc.) is open.
-     */
+    /** Checks if any container (chest, etc.) is open. */
     fun isContainerOpen(): Boolean {
         val screen = MinecraftClient.getInstance().currentScreen
         return screen is HandledScreen<*> && screen !is InventoryScreen
     }
 
-    /**
-     * Gets all slots in the currently open container (excluding player inventory).
-     */
+    /** Gets all slots in the currently open container (excluding player inventory). */
     fun getContainerSlots(): List<Slot> {
         val screen = MinecraftClient.getInstance().currentScreen as? HandledScreen<*> ?: return emptyList()
         val handler = screen.screenHandler
@@ -36,9 +30,7 @@ object InventoryUtils {
         return handler.slots.filter { it.inventory != playerInventory }
     }
 
-    /**
-     * Gets all items in the currently open container.
-     */
+    /** Gets all items in the currently open container. */
     fun getContainerItems(): List<ItemStack> {
         return getContainerSlots().map { it.stack }
     }

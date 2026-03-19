@@ -10,42 +10,30 @@ object BingoRouter {
     
     private val gson = Gson()
     
-    /**
-     * The currently scanned bingo goals.
-     */
+    /** The currently scanned bingo goals. */
     var currentGoals: List<BingoGoal> = emptyList()
 
-    /**
-     * Whether we are currently showing template goals.
-     */
+    /** If currently showing template goals. */
     var isUsingTemplates: Boolean = false
 
-    /**
-     * Data loaded from the goals.json resource.
-     */
+    /** Data loaded from the goals.json resource. */
     private var goalsDataMap: Map<String, GoalData> = emptyMap()
 
-    /**
-     * Loads the bingo goals from a JSON string.
-     */
+    /** Loads the bingo goals from a JSON string. */
     fun loadGoals(json: String) {
         val listType = object : TypeToken<List<GoalData>>() {}.type
         val dataList: List<GoalData> = gson.fromJson(json, listType)
-        // We use lowercase tile names as keys for easier matching.
+        // Using lowercase tile names as keys for easier matching.
         goalsDataMap = dataList.associateBy { it.tile.lowercase() }
     }
 
-    /**
-     * Checks if the Bingo Card GUI is currently open.
-     */
+    /** Checks if the Bingo Card GUI is currently open */
     fun isBingoCardOpen(): Boolean {
         val title = InventoryUtils.getInventoryName() ?: return false
         return title.contains("Bingo Card")
     }
 
-    /**
-     * Updates the current bingo goals from the open Bingo Card menu.
-     */
+    /** Updates the current bingo goals from the open Bingo Card menu */
     fun updateGoals() {
         if (!isBingoCardOpen()) return
         
@@ -56,9 +44,7 @@ object BingoRouter {
         }
     }
 
-    /**
-     * Loads template goals to show when no real goals are scanned.
-     */
+    /** Loads template goals to show when no real goals are scanned. */
     fun loadTemplateGoals() {
         val templateNames = listOf(
             "At your service",
@@ -80,8 +66,7 @@ object BingoRouter {
         isUsingTemplates = true
     }
 
-    /**
-     * Scans the current Bingo Card for goals.
+    /** Scans the current Bingo Card for goals.
      * In Hypixel, Bingo goals are items in the Bingo Card menu.
      */
     fun scanBingoGoals(): List<BingoGoal> {

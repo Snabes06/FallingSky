@@ -1,6 +1,8 @@
 package sw.surasnipers.fallingsky.client
 
 import net.fabricmc.api.ClientModInitializer
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry
 import net.fabricmc.fabric.api.client.rendering.v1.world.WorldRenderEvents
 import net.minecraft.client.MinecraftClient
@@ -9,6 +11,7 @@ import net.minecraft.util.Identifier
 class FallingskyClient : ClientModInitializer {
 
     override fun onInitializeClient() {
+        FallingskySettings.load()
         HudElementRegistry.addLast(Identifier.of("fallingsky", "hud_renderer"), HudRenderer())
         
         // Register the 3D line renderer
@@ -20,6 +23,29 @@ class FallingskyClient : ClientModInitializer {
         // Ensure template goals are loaded even if resource loading fails or is delayed
         if (BingoRouter.currentGoals.isEmpty()) {
             BingoRouter.loadTemplateGoals()
+        }
+
+        // Register command to open settings
+        ClientCommandRegistrationCallback.EVENT.register { dispatcher, _ ->
+            dispatcher.register(
+                ClientCommandManager.literal("fallingsky")
+                    .executes {
+                        val client = MinecraftClient.getInstance()
+                        client.execute {
+                            client.setScreen(SettingsScreen())
+                        }
+                        1
+                    }
+                    .then(ClientCommandManager.literal("settings")
+                        .executes {
+                            val client = MinecraftClient.getInstance()
+                            client.execute {
+                                client.setScreen(SettingsScreen())
+                            }
+                            1
+                        }
+                    )
+            )
         }
     }
 
@@ -45,7 +71,7 @@ class FallingskyClient : ClientModInitializer {
                 resource.get().inputStream.use { s ->
                     val json = s.bufferedReader().readText()
                     BingoRouter.loadGoals(json)
-                    println("[FallingSky] Successfully loaded bingo goals from resource manager.")
+                    println("[FallingSky] Successfully loaded bingo goals from resource.")
                 }
             } else {
                 println("[FallingSky] Bingo goals resource not found.")

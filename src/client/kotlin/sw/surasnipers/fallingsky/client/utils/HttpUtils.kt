@@ -10,9 +10,7 @@ object HttpUtils {
 
     private val client = HttpClient.newBuilder().build()
 
-    /**
-     * Sends an asynchronous GET request and returns a CompletableFuture with the response body.
-     */
+    /** Sends an asynchronous GET request and returns a CompletableFuture with the response body. */
     fun fetchAsync(url: String): CompletableFuture<String> {
         val request = HttpRequest.newBuilder()
             .uri(URI.create(url))
