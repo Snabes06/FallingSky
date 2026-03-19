@@ -16,7 +16,10 @@ public abstract class EntityMixin {
         // Use the toggle from FallingskyClient
         boolean glow = sw.surasnipers.fallingsky.client.FallingskyClient.isGlowEnabled();
         if (!glow) return;
-        if (sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)) {
+        if (
+                sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)
+                        && sw.surasnipers.fallingsky.client.FallingskyClient.isCorrectEntity(entity)
+        ) {
             cir.setReturnValue(true);
         } else {
             cir.setReturnValue(false);
