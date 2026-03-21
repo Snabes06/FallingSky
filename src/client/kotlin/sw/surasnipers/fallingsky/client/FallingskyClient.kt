@@ -37,6 +37,7 @@ class FallingskyClient : ClientModInitializer {
             if (!(angle < maxAngle)) return false
 
             // Check for blocks in the way
+            println(entity.name.string)
             val raycastContext = RaycastContext(player.getCameraPosVec(1.0f), entityPos, RaycastContext.ShapeType.OUTLINE, RaycastContext.FluidHandling.NONE, player)
             val hitResult = world.raycast(raycastContext)
             if (hitResult.type == HitResult.Type.BLOCK) {
