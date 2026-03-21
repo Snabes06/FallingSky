@@ -16,9 +16,12 @@ public abstract class EntityRendererOutlineMixin<T extends Entity> {
         // Custom outline color when glow is enabled
         boolean glow = sw.surasnipers.fallingsky.client.FallingskyClient.isGlowEnabled();
         if (!glow) return;
-        if (sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)) {
-            // Set a custom outline color, e.g., red with full alpha
-            state.outlineColor = 0xFFFF0000; // Red outline
+        if (
+                sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)
+                        && sw.surasnipers.fallingsky.client.FallingskyClient.isCorrectEntity(entity)
+        )  {
+            // Set a custom outline color with full alpha
+            state.outlineColor = sw.surasnipers.fallingsky.client.FallingskyClient.getGlowColor();
         }
     }
 }
