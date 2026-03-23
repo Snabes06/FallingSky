@@ -74,7 +74,6 @@ class SettingsScreen : Screen(Text.literal("FallingSky Settings")) {
         val contentX = panelX + 20
         val startY = panelY + 40
         val spacingY = 50
-        val textOffset = 25
 
         // Titles and Descriptions
         // Edit HUD Row

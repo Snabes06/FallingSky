@@ -10,7 +10,8 @@ data class HudConfig(
     var y: Int = 10,
     var width: Int = 850,
     var scale: Float = 1.0f,
-    var enabled: Boolean = true
+    var enabled: Boolean = true,
+    var gridSnap: Boolean = true
 )
 
 class FallingskySettings {
