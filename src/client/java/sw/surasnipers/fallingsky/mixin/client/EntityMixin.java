@@ -18,7 +18,7 @@ public abstract class EntityMixin {
         if (!glow) return;
         if (
                 sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)
-                        && sw.surasnipers.fallingsky.client.FallingskyClient.isCorrectEntity(entity)
+                        && sw.surasnipers.fallingsky.client.FallingskyClient.matchesSelectedMob(entity)
         ) {
             cir.setReturnValue(true);
         } else {

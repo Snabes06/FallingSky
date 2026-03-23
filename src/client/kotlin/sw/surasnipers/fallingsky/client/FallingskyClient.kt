@@ -8,19 +8,12 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.option.KeyBinding
-import net.minecraft.command.argument.EntityArgumentType
-import net.minecraft.command.argument.RegistryEntryReferenceArgumentType
 import net.minecraft.entity.Entity
-import net.minecraft.registry.Registries
-import net.minecraft.registry.Registry
-import net.minecraft.registry.RegistryKeys
-import net.minecraft.server.command.CommandManager
+import net.minecraft.entity.decoration.ArmorStandEntity
 import net.minecraft.text.Text
 import net.minecraft.util.Formatting
-import net.minecraft.util.Identifier
 import net.minecraft.util.hit.HitResult
 import net.minecraft.world.RaycastContext
 import org.lwjgl.glfw.GLFW
@@ -28,8 +21,13 @@ import kotlin.math.acos
 
 class FallingskyClient : ClientModInitializer {
 
-    //glow enable
     companion object {
+
+        @JvmStatic
+        fun minecraftChatPrint(tex: String){
+            MinecraftClient.getInstance().player?.sendMessage(Text.of(tex), false)
+        }
+
         @JvmStatic
         var glowEnabled = false
 
@@ -60,24 +58,23 @@ class FallingskyClient : ClientModInitializer {
 
         //glow entity
         @JvmStatic
-        var entity = "minecraft:glow_squid"
+        var targetRegex: Regex = Regex("Crypt Ghoul", RegexOption.IGNORE_CASE)
+
+
+
 
         @JvmStatic
-        fun getGlowEntity(): String {
-            return entity
-        }
+        fun matchesSelectedMob(entity: Entity): Boolean {
+            val world = MinecraftClient.getInstance().world ?: return false
 
-        @JvmStatic
-        fun isCorrectEntity(entity: Entity): Boolean {
-            val id = if (this.entity.contains(":")) {
-                Identifier.tryParse(this.entity)
-            } else {
-                Identifier.of("minecraft", this.entity)
-            } ?: return false
+            val armorStand = world.getEntityById(entity.id + 1) ?: return false
 
-            val selectedType = Registries.ENTITY_TYPE.get(id)
+            if (armorStand is ArmorStandEntity) {
+                val name = armorStand.name.string
+                return targetRegex.containsMatchIn(name)
+            }
 
-            return entity.type == selectedType
+            return false
         }
 
         //line of site checker
@@ -130,10 +127,10 @@ class FallingskyClient : ClientModInitializer {
             }
         }
 
-        CommandRegistrationCallback.EVENT.register { dispatcher, _, _ ->
+        ClientCommandRegistrationCallback.EVENT.register { dispatcher, _ ->
             dispatcher.register(
-                CommandManager.literal("glow")
-                    .then(CommandManager.argument("value", BoolArgumentType.bool()).executes { context ->
+                ClientCommandManager.literal("glow")
+                    .then(ClientCommandManager.argument("value", BoolArgumentType.bool()).executes { context ->
                         val newGlow = BoolArgumentType.getBool(context, "value")
                         glowEnabled = newGlow
                         MinecraftClient.getInstance().player?.sendMessage(Text.of("Glow set to whit varibule: $glowEnabled"), false)
@@ -149,11 +146,11 @@ class FallingskyClient : ClientModInitializer {
         }
 
 
-        CommandRegistrationCallback.EVENT.register { dispatcher, _, _->
+        ClientCommandRegistrationCallback.EVENT.register { dispatcher, _->
             dispatcher.register(
-                CommandManager.literal("glowC")
+                ClientCommandManager.literal("glowC")
                     .then(
-                        CommandManager.argument("color", StringArgumentType.word()).suggests { _, builder ->
+                        ClientCommandManager.argument("color", StringArgumentType.word()).suggests { _, builder ->
                             listOf("red", "green", "yellow").forEach { builder.suggest(it) }
                             builder.buildFuture()
                         }
@@ -195,30 +192,23 @@ class FallingskyClient : ClientModInitializer {
             dispatcher.register(
                 ClientCommandManager.literal("glowE")
                     .then(
-                        ClientCommandManager.argument("entity", StringArgumentType.greedyString())
-                            .suggests { _, builder ->
-                                Registries.ENTITY_TYPE.ids.forEach {
-                                    builder.suggest(it.toString())
-                                }
-                                builder.buildFuture()
-                            }
+                        ClientCommandManager.argument("regxEntity", StringArgumentType.greedyString())
                             .executes { context ->
-                                val input = StringArgumentType.getString(context, "entity")
-                                val id = if (input.contains(":")) {
-                                    Identifier.tryParse(input)
-                                } else {
-                                    Identifier.of("minecraft", input)
-                                }
+                                val input = StringArgumentType.getString(context, "regxEntity")
 
-                                if (id == null || !Registries.ENTITY_TYPE.containsId(id)) {
+                                try {
+                                    targetRegex = Regex(input, RegexOption.IGNORE_CASE)
+
                                     MinecraftClient.getInstance().player?.sendMessage(
-                                        Text.of("Invalid entity type: $input"),
+                                        Text.of("Glow regex set to: $input"),
                                         false
                                     )
-                                    return@executes 0
+                                } catch (e: Exception) {
+                                    MinecraftClient.getInstance().player?.sendMessage(
+                                        Text.of("Invalid regex!"),
+                                        false
+                                    )
                                 }
-
-                                entity = id.toString()
                                 1
                             }
                     )
