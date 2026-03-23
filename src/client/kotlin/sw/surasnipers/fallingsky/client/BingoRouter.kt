@@ -67,8 +67,7 @@ object BingoRouter {
     }
 
     /** Scans the current Bingo Card for goals.
-     * In Hypixel, Bingo goals are items in the Bingo Card menu.
-     */
+     * In Hypixel, Bingo goals are items in the Bingo Card menu. */
     fun scanBingoGoals(): List<BingoGoal> {
         if (!isBingoCardOpen()) return emptyList()
 
