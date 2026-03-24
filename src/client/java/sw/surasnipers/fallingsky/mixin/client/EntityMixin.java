@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import sw.surasnipers.fallingsky.client.systems.GlowSystem;
 
 @Mixin(Entity.class)
 public abstract class EntityMixin {
@@ -14,12 +15,7 @@ public abstract class EntityMixin {
         Entity entity = (Entity) (Object) this;
         if (entity == MinecraftClient.getInstance().player) return;
         // Use the toggle from FallingskyClient
-        boolean glow = sw.surasnipers.fallingsky.client.FallingskyClient.isGlowEnabled();
-        if (!glow) return;
-        if (
-                sw.surasnipers.fallingsky.client.FallingskyClient.isEntityInLineOfSight(entity)
-                        && sw.surasnipers.fallingsky.client.FallingskyClient.matchesSelectedMob(entity)
-        ) {
+        if (GlowSystem.INSTANCE.shouldGlow(entity)) {
             cir.setReturnValue(true);
         } else {
             cir.setReturnValue(false);
