@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.3.10"
-    id("fabric-loom") version "1.14-SNAPSHOT"
+    kotlin("jvm") version "2.4.20"
+    id("net.fabricmc.fabric-loom") version "1.18-SNAPSHOT"
     id("maven-publish")
 }
 
@@ -14,7 +14,7 @@ base {
     archivesName.set(project.property("archives_base_name") as String)
 }
 
-val targetJavaVersion = 21
+val targetJavaVersion = 25
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
@@ -51,26 +51,24 @@ repositories {
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")}")
-    mappings("net.fabricmc:yarn:${project.property("yarn_mappings")}:v2")
-    modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
-    modImplementation("net.fabricmc:fabric-language-kotlin:${project.property("kotlin_loader_version")}")
+    implementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
+    implementation("net.fabricmc:fabric-language-kotlin:${project.property("kotlin_loader_version")}")
 
-    modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
 }
 
 tasks.processResources {
-    inputs.property("version", project.version)
-    inputs.property("minecraft_version", project.property("minecraft_version"))
-    inputs.property("loader_version", project.property("loader_version"))
+    val props = mapOf(
+        "version" to project.version.toString(),
+        "minecraft_version" to project.property("minecraft_version").toString(),
+        "loader_version" to project.property("loader_version").toString(),
+        "kotlin_loader_version" to project.property("kotlin_loader_version").toString()
+    )
+    inputs.properties(props)
     filteringCharset = "UTF-8"
 
     filesMatching("fabric.mod.json") {
-        expand(
-            "version" to project.version.toString(),
-            "minecraft_version" to project.property("minecraft_version").toString(),
-            "loader_version" to project.property("loader_version").toString(),
-            "kotlin_loader_version" to project.property("kotlin_loader_version").toString()
-        )
+        expand(props)
     }
 }
 
@@ -88,8 +86,9 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 tasks.jar {
-    from("LICENSE") {
-        rename { "${it}_${project.base.archivesName.get()}" }
+    val archivesName = base.archivesName
+    from("LICENSE.txt") {
+        rename { "${it}_${archivesName.get()}" }
     }
 }
 
