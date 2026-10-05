@@ -1,33 +1,26 @@
 package sw.surasnipers.fallingsky.client.commands
 
 import com.mojang.brigadier.arguments.BoolArgumentType
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager
-import net.minecraft.client.MinecraftClient
-import net.minecraft.text.Text
+import net.fabricmc.fabric.api.client.command.v2.ClientCommands
 import sw.surasnipers.fallingsky.client.config.GlowConfig
+import sw.surasnipers.fallingsky.client.utils.ChatUtils
 
 object GlowCommand {
 
     fun register(dispatcher: com.mojang.brigadier.CommandDispatcher<net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource>) {
         dispatcher.register(
-            ClientCommandManager.literal("glow")
+            ClientCommands.literal("glow")
                 .then(
-                    ClientCommandManager.argument("value", BoolArgumentType.bool())
+                    ClientCommands.argument("value", BoolArgumentType.bool())
                         .executes {
                             GlowConfig.glowEnabled = BoolArgumentType.getBool(it, "value")
-                            MinecraftClient.getInstance().player?.sendMessage(
-                                Text.of("Glow: ${GlowConfig.glowEnabled}"),
-                                false
-                            )
+                            ChatUtils.send("Glow: ${GlowConfig.glowEnabled}")
                             1
                         }
                 )
                 .executes {
                     GlowConfig.glowEnabled = !GlowConfig.glowEnabled
-                    MinecraftClient.getInstance().player?.sendMessage(
-                        Text.of("Glow toggled: ${GlowConfig.glowEnabled}"),
-                        false
-                    )
+                    ChatUtils.send("Glow: ${GlowConfig.glowEnabled}")
                     1
                 }
         )

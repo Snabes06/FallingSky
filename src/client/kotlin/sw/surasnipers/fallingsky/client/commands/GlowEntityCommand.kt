@@ -1,17 +1,17 @@
 package sw.surasnipers.fallingsky.client.commands
 
 import com.mojang.brigadier.arguments.StringArgumentType
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager
+import net.fabricmc.fabric.api.client.command.v2.ClientCommands
 import sw.surasnipers.fallingsky.client.config.GlowConfig
 import sw.surasnipers.fallingsky.client.utils.ChatUtils
 
-object GetGlowEntityCommand {
+object GlowEntityCommand {
 
     fun register(dispatcher: com.mojang.brigadier.CommandDispatcher<net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource>) {
         dispatcher.register(
-            ClientCommandManager.literal("glowE")
+            ClientCommands.literal("glowE")
                 .then(
-                    ClientCommandManager.argument("regex", StringArgumentType.greedyString())
+                    ClientCommands.argument("regex", StringArgumentType.greedyString())
                         .executes {
                             val input = StringArgumentType.getString(it, "regex")
 
